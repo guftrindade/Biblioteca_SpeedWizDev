@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Biblioteca_Speed_Wiz_Dev</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+        <img class="logobiblioteca" src="./Logomarcas/logobiblioteca.png" alt="">  
+        <h2 class="logo">Biblioteca Desafio Final - Speed Wiz Dev</h2>
+
+        <div class="meus-links">
+          <img class="linkedin" onclick='redirecionaLinkedin()' src="./Logomarcas/linkedin.png" alt="">
+          <img class="github" onclick='redirecionaGithub()' src="./Logomarcas/github.png" alt="">
+        </div>
+    </div>
+  </header>
+
+  <div id="errors"></div>
+  <div id="telaLogin">
+    <form id="formLogin">
+      <label>E-mail: <input name="email" value="renato@gmail.com" /></label>
+      <label
+        >Senha: <input type="password" name="senha" value="Test@123"
+      /></label>
+      <button type="submit" id="buttonEntrar">Entrar</button>
+    </form>
+  </div>
+
+  <div id="telaLivros">
+    <form id="formLivro">
+      <label>Descrição: <input name="descricao" /></label>
+      <label>ISBN: <input name="isbn" type="number"/></label>
+      <label
+        >Autor:
+        <select name="autorId"></select
+      ></label>
+      <label
+        >Ano de lançamento: <input name="anoLancamento" type="number"
+      /></label>
+      <div class="botoes">
+        <button class="botoes" type="button" id="buttonExcluir">Excluir</button>
+        <button class="botoes" type="button" id="buttonCancelar">Cancelar</button>
+        <button class="botoes" type="submit" id="buttonSalvar">Cadastrar</button>
+      </div>
+    </form>
+    <ul></ul>
+  </div>
+  <script src="http.js"></script>
+  <script src="main.js"></script>
+  <script src="./LinksDeContato/links.js"></script>
+</body>
