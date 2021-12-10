@@ -8,3 +8,4 @@ Desafio final do Bootcamp Speed Wiz Dev em parceria com o IGTI
 ### Próximas implementações
 - Cadastro de usuário "admin" e "comum"
 - Sistema de autorização e autenticação com JWT
+- Melhoria na interface do front end
