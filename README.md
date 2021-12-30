@@ -7,3 +7,5 @@ Desafio final do Bootcamp Speed Wiz Dev em parceria com o IGTI
 
 ### Próximas implementações
 - Melhoria na interface do front end
+- Possibilidade de criar e exluir autor
+- Implementação de sistema de autorização para cada usuário no front end
