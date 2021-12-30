@@ -14,7 +14,8 @@ async function init() {
   formLivro.addEventListener("submit", salvaLivro);
   buttonExcluir.addEventListener("click", deletarLivro);
 
-  if (isLogado()) {
+  //mostraTelaLivros();
+  if  (isLogado()) {
     mostraTelaLivros();
   } else {
     mostraTelaLogin();
@@ -129,7 +130,7 @@ function exibeLivros() {
     divDescricao.textContent = livro.descricao;
     li.appendChild(divDescricao);
     const divAutor = document.createElement("div");
-    divAutor.textContent = livro.nomeAutor;
+    divAutor.textContent = livro.autor;
     li.appendChild(divAutor);
     const divAno = document.createElement("div");
     divAno.textContent = livro.anoLancamento;
@@ -148,8 +149,7 @@ function exibeOpcoesAutores() {
   formLivro.autorId.innerHTML = "";
   for (const autor of autores) {
     const option = document.createElement("option");
-    option.textContent = autor.nome;
-    //option.value = autor.id;
+    option.textContent = autor.nomeCompleto;
     option.value = autor.autorId;
     formLivro.autorId.appendChild(option);
   }
